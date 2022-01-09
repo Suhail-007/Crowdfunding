@@ -8,7 +8,7 @@ let thankYouModal = document.
 querySelector('[data-thankYou-Modal]');
 
 let radioInputs = document.
-querySelectorAll('.modal-items-div .radio-selection-div > input');
+querySelectorAll('.modal-items-div .radio-selection-div input');
 
 let pledgeInputs = document.
 querySelectorAll('[data-pledge-input]');
