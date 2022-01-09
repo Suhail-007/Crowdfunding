@@ -286,15 +286,11 @@ button {
 		padding: 5vw 5vw 10vw;
 }
 
-.items-div .items > h3 {
-		line-height: 2vw;
-}
-
 .items-div .items p:first-of-type {
 	color: var(--element-bg-color);
 	font-weight: bold;
 	font-size: 4vw;
-	margin-bottom: 10vw; 
+	margin-bottom: 10vw;
 }
 
 .items-div .items .item-info,
@@ -350,7 +346,27 @@ button {
 		margin-left: 1.7em;
 }
 
+.radio-selection-div input {
+-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+
+.radio-selection-div input:checked {
+  border: 6px solid black;
+}
 .input-pledge-div-parent hr {
 		border: none;
 		border-top: 1px solid gray;
