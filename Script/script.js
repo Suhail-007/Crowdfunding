@@ -46,10 +46,14 @@ continueBtns.forEach(button => {
 		button.addEventListener('click', () => {
 	for (let i = 0; i < radioInputs.length; i++) {
 			if (radioInputs[i].checked && pledgeInputs[i].value == '') alert('Enter Pledge Amount');
-			else if (radioInputs[i].checked && pledgeInputs[i].value !== '') {
+			else if (radioInputs[i].checked && pledgeInputs[i].value == 0) {
+			alert('Amount can\'t be zero');
+			pledgeInputs[i].value = '';	
+		} else if (radioInputs[i].checked && pledgeInputs[i].value !== '') {
  		pledgemodalPopUp.style.display = 'none';
-		thankYouModal.style.display = 'block';				 
-		 }	
+		thankYouModal.style.display = 'block';	
+		pledgeInputs[i].value = '';	 				 	 
+	 }
 	 }
 	});
 });
