@@ -116,7 +116,7 @@ header {
 		margin-bottom: 3em;
 }
 
-/*common design for all button*/
+/*COMMON DESIGN FOR ALL BUTTON*/
 button {
 		background-color: none;
 		border: none;
@@ -182,6 +182,7 @@ button {
 		position: relative;
 }
 
+/*BOOKMARK ICON*/
 .wrapper .bookmark > button + i {
 		background: black;
 		width: 12vw;
@@ -190,7 +191,7 @@ button {
 		border-radius: 100%;
 }
 
-/*logo at the top of the first div*/
+/*LOGO AT THE TOP OF THE FIRST DIV*/
 .m-logo {
 		background: black;
 		width: 15%;
@@ -212,6 +213,13 @@ button {
 		width: 100%;
 		text-align: center;
 		padding: 1em 1em 3em;
+}
+
+.mini-dashboard hr {
+ border: none;
+ border-top: 1px solid gray;
+ text-align: center;
+ width: 15vw;
 }
 
 .mini-dashboard > p {
@@ -264,7 +272,7 @@ button {
 		font-size: 4vw;
 }
 
-/*section where all the are and info about campaign*/
+/*SECTION WHERE ALL THE ARE AND INFO ABOUT CAMPAIGN*/
 
 .items-div,
 .modal-items-div {
@@ -302,7 +310,7 @@ button {
 		font-weight: bold;
 }
 
-/*number of left items*/ 
+/*NUMBER OF LEFT ITEMS*/ 
 .items-div .items p:nth-child(4) > span,
 .modal-items .radio-selection-div + p + p > span {
 		font-size: 4vw;
@@ -320,10 +328,9 @@ button {
 		background-color: lightgrey;
 }
 
-.modal-items .radio-selection-div {
-		display: flex;
-		align-items: center;
-		gap: 0 1em;
+.radio-selection-div label {
+		font-size: 4.5vw;
+		font-weight: bolder;
 }
 
 .modal-items {
@@ -333,10 +340,21 @@ button {
 }
 
 /*this will only change the color of pledge para*/
-.modal-items .radio-selection-div > label > p {
+.modal-items .radio-selection-div p {
 	color: var(--element-bg-color);
 	font-weight: bold;
 	font-size: 4vw;
+}
+
+.radio-selection-div p {
+		margin-left: 1.7em;
+}
+
+
+.input-pledge-div-parent hr {
+		border: none;
+		border-top: 1px solid gray;
+		width: 100%;
 }
 
 .input-pledge-div-parent > p,
