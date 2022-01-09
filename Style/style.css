@@ -118,12 +118,12 @@ header {
 
 /*COMMON DESIGN FOR ALL BUTTON*/
 button {
-		background-color: none;
+		background: none;
+		background-color: var(--element-bg-color);
 		border: none;
 		outline: none;
 		cursor: pointer;
 		border-radius: 10vw;
-		background:  var(--element-bg-color);
 		color: white;
 		font-weight: bold;
 }
